@@ -28,10 +28,12 @@ const init = function () {
 
   playing = true;
 
-  diceEl.classList.add('hidden');
   document.getElementById(`current--${activePlayer}`).textContent = 0;
+
   score0El.textContent = 0;
   score1El.textContent = 0;
+
+  diceEl.classList.add('hidden');
   player0.classList.remove('player--winner');
   player1.classList.remove('player--winner');
   player0.classList.add('player--active');
